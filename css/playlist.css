@@ -1,0 +1,296 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "mplaylist similar"
+    "mplaylist recentplayed"
+    "popular-art popular-art";
+  grid-template-columns: 68% 30%;
+  justify-content: center;
+}
+
+#playlist-section {
+  grid-area: mplaylist;
+}
+
+#similar-artist {
+  grid-area: similar;
+  overflow: scroll;
+}
+#popular-main {
+  grid-area: popular-art;
+  display: none;
+}
+
+#recently-played {
+  grid-area: recentplayed;
+  overflow: scroll;
+}
+
+#playlist-p1 {
+  display: grid;
+  grid-template-columns: 35% 60%;
+  grid-column-gap: 2%;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#artist-photo img {
+  width: 22.6vw;
+  border-radius: 20%;
+}
+
+#artist-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#artist-upper {
+  display: flex;
+  flex-direction: column;
+}
+
+#artist-upper #ps-s1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#artist-upper #ps-s1 h2 {
+  font-size: 2rem;
+}
+#artist-upper #ps-s1 #artist-fav i {
+  font-size: 1.8rem;
+}
+#artist-upper #ps-s1 #artist-fav i:hover {
+  color: red;
+}
+
+#artist-upper #ps-s2 #artist-desp {
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+  font-family: "Baloo Chettan 2", cursive;
+}
+
+#artist-lower #ps-s3 {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+#artist-lower #ps-s3 #artist-playall {
+  /* border: 2px solid red; */
+  width: 16vw;
+}
+
+#artist-lower #ps-s3 #artist-playall button {
+  border: none;
+  width: 15vw;
+  height: 2.3rem;
+  background-image: linear-gradient(45deg, red, blue);
+  font-size: 1.5rem;
+  border-radius: 5%;
+  font-family: "Roboto Condensed", sans-serif;
+  cursor: pointer;
+}
+
+#artist-lower #ps-s3 #artist-playall div {
+  width: 15vw;
+  font-size: 0.7rem;
+  text-align: center;
+  margin-top: 0.2rem;
+  color: burlywood;
+  font-family: "Baloo Chettan 2", cursive;
+}
+
+#artist-lower #ps-s3 #artist-follw-button button {
+  border: none;
+  width: 15vw;
+  height: 2.3rem;
+  background-image: linear-gradient(45deg, orange, green);
+  font-size: 1.5rem;
+  border-radius: 5%;
+  font-family: "Roboto Condensed", sans-serif;
+  cursor: pointer;
+}
+
+#artist-lower #ps-s3 #artist-follw-button div {
+  width: 15vw;
+  font-size: 0.7rem;
+  text-align: center;
+  margin-top: 0.2rem;
+  color: red;
+  font-family: "Baloo Chettan 2", cursive;
+}
+
+#playlist-p2 {
+  margin-top: 3rem;
+}
+.text-center {
+  text-align: center;
+}
+
+#playlist-list #plist-heading th:nth-child(1) {
+  width: 8%;
+}
+
+#playlist-list #plist-heading th:nth-child(2) {
+  width: 12%;
+}
+
+#playlist-list #plist-heading th:nth-child(3) {
+  width: 38%;
+  text-align: left;
+}
+
+#playlist-list #plist-heading th:nth-child(4) {
+  width: 30%;
+}
+
+#playlist-list #plist-heading th:nth-child(5) {
+  width: 12%;
+}
+
+#playlist-list {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+#plist-heading th {
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+}
+#s-duration img {
+  height: 1.4rem;
+  filter: invert(1);
+}
+#playlist-list .plist-data {
+  cursor: pointer;
+}
+#playlist-list .plist-data:hover {
+  opacity: 0.5;
+  background-color: rgb(107, 102, 102);
+}
+#playlist-list .plist-data td {
+  border-collapse: collapse;
+  padding: 0.5rem;
+  height: 4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Roboto", sans-serif;
+}
+.song-artist{
+  color: salmon;
+
+}
+.song-duration{
+  color: aqua;
+}
+.song-name {
+  display: flex;
+  align-items: center;
+}
+
+.song-name img {
+  width: 2.5rem;
+  margin-right: 0.5rem;
+  border-radius: 20%;
+}
+.song-fav i:hover {
+  color: red;
+}
+
+/* Simalar section */
+#sim-sec1 {
+
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+#sim-sec1 h3{
+  font-size: 1.5rem;
+  color: darkorange;
+}
+
+#sim-sec2 .same-artist {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  padding: 7px;
+}
+
+#sim-sec2 .same-artist:hover {
+  padding: 5px;
+  border: 2px solid red;
+  opacity: 1;
+  background-color: black;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+
+#sim-sec2 .same-artist img {
+  width: 7vw;
+  border-radius: 30%;
+}
+#sim-sec2 .same-artist i:hover{
+  color: red;
+  
+}
+
+#similar-artist {
+  width: 28%;
+  height: 78vh;
+  position: fixed;
+  right: 0.5%;
+}
+
+#recently-played {
+  width: 28%;
+  height: 42vh;
+  position: fixed;
+  bottom: 0;
+  right: 0.5%;
+}
+@media screen and (max-width: 768px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "mplaylist"
+      "popular-art";
+    grid-template-columns: 98%;
+    justify-content: center;
+  }
+  #similar-artist,
+  #recently-played {
+    display: none;
+  }
+  #popular-main {
+    display: block;
+  }
+  #playlist-p1 {
+    grid-template-columns: 30% 65%;
+  }
+  #artist-photo img {
+    width: 28.6vw;
+  }
+  #artist-upper #ps-s2 #artist-desp {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  #artist-lower #ps-s3 #artist-playall {
+    width: 21vw;
+  }
+
+  #artist-lower #ps-s3 #artist-follw-button button,
+  #artist-lower #ps-s3 #artist-follw-button div,
+  #artist-lower #ps-s3 #artist-playall button,
+  #artist-lower #ps-s3 #artist-playall div {
+    width: 20vw;
+    font-size: 1rem;
+  }
+
+}
