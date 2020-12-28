@@ -1,3 +1,4 @@
+/* To Divide The Body in Ratio Using grid */
 body {
   display: grid;
   grid-template-areas:
@@ -26,6 +27,11 @@ body {
   overflow: scroll;
 }
 
+/* i have Divided Playlist in 2 parts one for 
+        upper part for Artis Description
+        Below Part is For Artis Songs */
+
+/* This is A playlist section Part 1        */
 #playlist-p1 {
   display: grid;
   grid-template-columns: 35% 60%;
@@ -121,7 +127,7 @@ body {
   color: red;
   font-family: "Baloo Chettan 2", cursive;
 }
-
+/* This is A playlist section Part 2 */
 #playlist-p2 {
   margin-top: 3rem;
 }
@@ -179,11 +185,10 @@ body {
   white-space: nowrap;
   font-family: "Roboto", sans-serif;
 }
-.song-artist{
+.song-artist {
   color: salmon;
-
 }
-.song-duration{
+.song-duration {
   color: aqua;
 }
 .song-name {
@@ -202,13 +207,12 @@ body {
 
 /* Simalar section */
 #sim-sec1 {
-
   display: flex;
   justify-content: space-around;
   font-size: 1.1rem;
   font-weight: bold;
 }
-#sim-sec1 h3{
+#sim-sec1 h3 {
   font-size: 1.5rem;
   color: darkorange;
 }
@@ -235,9 +239,8 @@ body {
   width: 7vw;
   border-radius: 30%;
 }
-#sim-sec2 .same-artist i:hover{
+#sim-sec2 .same-artist i:hover {
   color: red;
-  
 }
 
 #similar-artist {
@@ -254,6 +257,10 @@ body {
   bottom: 0;
   right: 0.5%;
 }
+
+/* To Make Responsive we have Given media Quries
+Acc to the Screen Viewport */
+/* For Tablets */
 @media screen and (max-width: 768px) {
   body {
     display: grid;
@@ -280,6 +287,7 @@ body {
     font-size: 1rem;
   }
 }
+/* For Very Large Phones */
 @media screen and (max-width: 425px) {
   #artist-lower #ps-s3 #artist-playall {
     width: 21vw;
@@ -292,5 +300,4 @@ body {
     width: 20vw;
     font-size: 1rem;
   }
-
 }

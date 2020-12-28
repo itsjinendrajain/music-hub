@@ -6,7 +6,6 @@
   color: white;
   box-sizing: border-box;
 }
-
 /* to hide Scrool bar */
 /* Hide scrollbar for Chrome, Safari and Opera */
 .hide-scroll::-webkit-scrollbar {
@@ -18,7 +17,6 @@
   scrollbar-width: none; /* Firefox */
 }
 /* End Of Hide Scrool BAr */
-
 /* Navigation Bar */
 nav {
   height: 4.69rem;
@@ -51,6 +49,7 @@ nav {
   margin-right: 1vw;
   animation: rotate90 2s infinite alternate;
 }
+/* To Give Animation Main Logo */
 @keyframes rotate90 {
   0% {
     transform: rotate(720deg);
@@ -70,7 +69,7 @@ nav {
   animation: colorchange 10s linear 0.3s infinite alternate;
   -webkit-animation: colorchange 10s linear 0.3s infinite alternate; /* Chrome and Safari */
 }
-
+/* To Change the Color Of Site name*/
 @keyframes colorchange {
   14% { color: violet; }
   28% { color: indigo; }
@@ -114,6 +113,7 @@ nav {
   animation: rotate45 1s infinite;
   cursor: pointer;
 }
+/* To Give Animation Notification Icons */
 @keyframes rotate45 {
   0% {
     transform: rotate(0deg);
@@ -136,7 +136,7 @@ nav {
   cursor: pointer;
 }
 
-/* Website ratio in dividing */
+/* dividing Website in ratio  */
 #main-desgin {
   display: grid;
   grid-template-areas:
@@ -585,101 +585,7 @@ section#slider figure {
   border-radius: 20%;
 }
 
-/* For 4K Screen  */
-@media screen and (max-width:2560px){
-  html{
-    font-size: 30px;
-}
-}
-/* For Large Screen Laptops */
-@media screen and (max-width:1700px){
-  html{
-    font-size: 20px;
-}
-}
-/* For Latops */
-@media screen and (max-width:1024px){
-  html{
-    font-size: 18px;
-}
-}
-/* For Tablets */
-@media screen and (max-width:768px){
-  html {
-    font-size: 15px;
-  }
-  #nav-fav{
-    display: none;
-  }
-  #nav-right {
-    width: 60%;
-  }
-  
-  #main-desgin {
-    grid-template-areas:
-      "slider "
-      "main";
-    grid-template-columns: 90%;
-  }
-  #pq_outer {
-    display: none;
-  }
-  /* Lat released */
-  .inner-r img {
-    width: 14vw;
-  }
-  
-  /* popular Artist */
-  .inner_pop img {
-    width: 13vw;
-  }
-  /* Station */
-  .g1 img {
-    width: 15vw;
-  }
-  
-  .outer_g2 {
-    width: 26vw;
-    height: 17vw;
-  
-  }
-  #main-h-songs .o_hsong img,
-  #main-p-songs .o_hsong img,#main-e-songs .o_hsong img {
-    width: 16vw;
-  }
-}
-/* For Very Large Phones */
-@media screen and (max-width:425px){
-  html {
-    font-size: 10px;
-  }
-  .outer-r * {
-    font-size: 1.1rem;
-    font-weight: 500;
-    text-align: center;}
-}
-/* For Medium Phones */
-@media screen and (max-width:375px){
-  .outer_g2 {
-    width: 26vw;
-    height: 17vw;
-  }
-  html{
-    font-size: 10px;
-}
-}
-/* For Very small Phones */
-@media screen and (max-width:320px){
-  html{
-    font-size: 8px;
-}
-#main-desgin {
-    grid-template-areas:
-      "slider "
-      "main";
-    grid-template-columns: 98%;
-  }
-}
+
 
 
 
@@ -747,11 +653,79 @@ section#slider figure {
   justify-content: center;
 
 }
+/* To Make Responsive we have Given media Quries
+Acc to the Screen Viewport */
+/* For 4K Screen  */
+@media screen and (max-width:2560px){
+  html{
+    font-size: 30px;
+}
+}
+/* For Large Screen Laptops */
+@media screen and (max-width:1700px){
+  html{
+    font-size: 20px;
+}
+}
+/* For Latops */
+@media screen and (max-width:1024px){
+  html{
+    font-size: 18px;
+}
+}
+/* For Tablets */
+@media screen and (max-width:768px){
+  html {
+    font-size: 15px;
+  }
+  #nav-fav{
+    display: none;
+  }
+  #nav-right {
+    width: 60%;
+  }
+  
+  #main-desgin {
+    grid-template-areas:
+      "slider "
+      "main";
+    grid-template-columns: 90%;
+  }
+  #pq_outer {
+    display: none;
+  }
+  /* Lat released */
+  .inner-r img {
+    width: 14vw;
+  }
+  
+  /* popular Artist */
+  .inner_pop img {
+    width: 13vw;
+  }
+  /* Station */
+  .g1 img {
+    width: 15vw;
+  }
+  
+  .outer_g2 {
+    width: 26vw;
+    height: 17vw;
+  
+  }
+  #main-h-songs .o_hsong img,
+  #main-p-songs .o_hsong img,#main-e-songs .o_hsong img {
+    width: 16vw;
+  }
+}
+/* For Mid Between Tablet and Large phone */
 @media screen and (max-width:680px) {
   #playercontrols {
       grid-template-columns: 35% 40% 25%;
+    }
   }
-}
+
+ /* For Mid Between Tablet and Large phone */
 @media screen and (max-width:560px) {
   #playercontrols {
       grid-template-columns: 50% 40%;
@@ -760,6 +734,28 @@ section#slider figure {
       display: none;
   }
 }
+/* For Very Large Phones */
+@media screen and (max-width:425px){
+  html {
+    font-size: 10px;
+  }
+  .outer-r * {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;}
+}
+/* For Medium Phones */
+@media screen and (max-width:375px){
+  .outer_g2 {
+    width: 26vw;
+    height: 17vw;
+  }
+  html{
+    font-size: 10px;
+}
+}
+
+/* For Between Medium And Small phone */
 @media screen and (max-width:430px) {
   #playercontrols {
       grid-template-columns: 40% 60%;
@@ -769,4 +765,17 @@ section#slider figure {
       display: none;
   }
 }
+/* For Very small Phones */
+@media screen and (max-width:320px){
+  html{
+    font-size: 8px;
+}
+#main-desgin {
+    grid-template-areas:
+      "slider "
+      "main";
+    grid-template-columns: 98%;
+  }
+}
+
 
