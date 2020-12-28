@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JJ Music Pub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="/img/logo1.svg" type="image/x-icon">
+</head>
+<body class="hide-scroll">
+    <nav>
+        <div id="nav-left">
+            <div id="logo_name">
+                <a href="#"><img id="jj-logo" src="/img/logo1.svg" alt=""></a>
+                <a href="">
+                    <div id="website-name">JJ Pub</div>
+                </a>
+            </div>
+        </div>
+        <div id="nav-right">
+            <div><input type="search" name="" id="" placeholder="Search Here...."></div>
+            <div id="bell-icon"><img src="/img/bell_icon.svg" alt=""></div>
+            <div id="profile-photo"><img src="/img/profile-photo.JPG" alt=""></div>
+        </div>
+    </nav>
+    <section id="playercontrols">
+        <div class="songname">
+            <div class="song_artist">
+                <img src="/img/neha-kakkar/kallasonahai.jpg" alt="">
+                <div>
+                    <p>Kalla Sohna Nai Hai</p>
+                    <p>Neha Kakkar</p>
+                </div>
+            </div>
+            <i class="fa fa-heart"></i>
+
+        </div>
+        <div class="player">
+
+            <div class="controls">
+                <div><i class="fas fa-random"></i></div>
+                <div><i class="fas fa-step-backward"></i></div>
+                <div><i class="fas fa-pause-circle"></i></div>
+                <div><i class="fas fa-step-forward"></i></div>
+                <div><i class="fas fa-redo"></i></div>
+            </div>
+            <div class="song_range">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="width: 90%">
+            </div>
+
+        </div>
+        <div class="extras">
+            <div class="extras1">
+                <i class="fas fa-list-ul"></i>
+                <i class="fas fa-laptop"></i>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-expand-alt"></i>
+
+            </div>
+
+            <div class="extras2">
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div id="main-desgin">
+        <section id="slider">
+            <figure>
+                <img src="img/slider/shona-shona.jpg" alt>
+                <img src="/img/slider/kya-baat-hai.jpg" alt>
+                <img src="/img/slider/KoiViNahi.jpg" alt>
+                <img src="/img/slider/KallaSohnaNai.jpg" alt>
+                <img src="/img/slider/asimhimanshi.jpg" alt>
+            </figure>
+        </section>
+        <aside id="playlist-queue">
+            <div id="pq_outer" class="hide-scroll">
+                <div id="pq-head">
+                    <div>Queue</div>
+                    <div class="dropdown">
+                        <button>Options<i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content" >
+                            <div class="o-part"><a href="#">Favourites</a></div>
+                            <div class="o-part"><a href="#">View All</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="out-play">
+                    <img src="/img/songs-english/7 rings.jpg" alt="">
+                    <div class="q-desp">
+                        <p>7 Rings</p>
+                        <p>Ariana Grande</p>
+                    </div>
+                    <i class="fa fa-heart" style="font-size:30px"></i>
+                </div>
+                <div class="out-play">
+                    <img src="/img/songs-english/closer.jpg" alt="">
+                    <div class="q-desp">
+                        <p>Closer</p>
+                        <p>Chainsmokers</p>
+                    </div>
+                    <i class="fa fa-heart" style="font-size:30px"></i>
+                </div>
+                <div class="out-play">
+                    <img src="/img/songs-english/friends.jpg" alt="">
+                    <div class="q-desp">
+                        <p>Friend</p>
+                        <p>Marshmello</p>
+                    </div>
+                    <i class="fa fa-heart" style="font-size:30px"></i>
+                </div>
+                <div class="out-play">
+                    <img src="/img/songs-english/let me love u.jpg" alt="">
+                    <div class="q-desp">
+                        <p>Let Me Love U</p>
+                        <p>Justin Bieber</p>
+                    </div>
+                    <i class="fa fa-heart" style="font-size:30px"></i>
+                </div>
+                <div class="out-play">
+                    <img src="/img/songs-hindi/Ae-Mere-Dil.jpg" alt="">
+                    <div class="q-desp">
+                        <p>Ae Mere Dil</p>
+                        <p>Abhay Jodhpurkar</p>
+                    </div>
+                    <i class="fa fa-heart" style="font-size:30px"></i>
+                </div>
+                <div class="out-play">
+                    <img src="/img/songs-hindi/bol-do-na-zara.jpg" alt="">
+                    <div class="q-desp">
+                        <p>Bol Do Na Zara</p>
+                        <p>Armaan Malik</p>
+                    </div>
+                    <i class="fa fa-heart" style="font-size:30px"></i>
+                </div>
+                <div class="out-play">
+                    <img src="/img/song-punjabi/clash.jpg" alt="">
+                    <div class="q-desp">
+                        <p>Clash</p>
+                        <p>Diljit</p>
+                    </div>
+                    <i class="fa fa-heart" style="font-size:30px"></i>
+                </div>
+                <div class="out-play">
+                    <img src="/img/song-punjabi/jimmy-choo.jpg" alt="">
+                    <div class="q-desp">
+                        <p>Jimmy Choo</p>
+                        <p>Guri</p>
+                    </div>
+                    <i class="fa fa-heart" style="font-size:30px"></i>
+                </div>
+                <div class="out-play">
+
+                    <img src="/img/song-punjabi/Pagal-Gurnam-Bhullar.jpg" alt="">
+                    <div class="q-desp">
+                        <p>Pagal</p>
+                        <p>Gurnam Bhullar</p>
+                    </div>
+                    <i class="fa fa-heart" style="font-size:30px"></i>
+                </div>
+                <div class="out-play">
+                    <img src="/img/song-punjabi/sheh.jpg" alt="">
+                    <div class="q-desp">
+                        <p>Sheh</p>
+                        <p>Singa</p>
+                    </div>
+                    <i class="fa fa-heart" style="font-size:30px"></i>
+                </div>
+                <div class="out-play">
+                    <img src="/img/song-punjabi/suit-punjabi.jpg" alt="">
+                    <div class="q-desp">
+                        <p>Suit</p>
+                        <p>Jass Manak</p>
+                    </div>
+                    <i class="fa fa-heart" style="font-size:30px"></i>
+                </div>
+                <div class="out-play">
+                    <img src="/img/songs-english/on my way.jpg" alt="">
+                    <div class="q-desp">
+                        <p>On My Way</p>
+                        <p>Alan Walker</p>
+                    </div>
+                    <i class="fa fa-heart" style="font-size:30px"></i>
+                </div>
+                <div class="out-play">
+                    <img src="/img/songs-hindi/hua-hai-aj-pehli-bar.jpg" alt="">
+                    <div class="q-desp">
+                        <p>Hua Hain Aaj Pehli Baar</p>
+                        <p>Armaan Malik</p>
+                    </div>
+                    <i class="fa fa-heart" style="font-size:30px"></i>
+                </div>
+                <div class="out-play">
+                    <img src="/img/songs-hindi/Raabta.jpg" alt="">
+                    <div class="q-desp">
+                        <p>Raabta</p>
+                        <p>Arijit Singh</p>
+                    </div>
+                    <i class="fa fa-heart" style="font-size:30px"></i>
+                </div>
+                <div class="out-play">
+                    <img src="/img/songs-hindi/shayad.jpg" alt="">
+                    <div class="q-desp">
+                        <p>Shayad</p>
+                        <p>Arijit Singh</p>
+                    </div>
+                    <i class="fa fa-heart" style="font-size:30px"></i>
+                </div>
+                <div class="out-play">
+                    <img src="/img/latest-punjabi/kallasonahai.jpg" alt="">
+                    <div class="q-desp">
+                        <p>Kalla Sohna Na Hai</p>
+                        <p>Neha Kakkar</p>
+                    </div>
+                    <i class="fa fa-heart" style="font-size:30px"></i>
+                </div>
+            </div>
+        </aside>
+        <div id="main">
+            <section id="latest-release">
+                <h2>Latest Release</h2>
+                <div id="lat-rel">
+                    <div class="outer-r">
+                        <div class="inner-r">
+                            <img src="/img/latest-punjabi/kallasonahai.jpg" alt="">
+                            <div class="s-details">
+                                <p>Kalla Sohna Na Hai</p>
+                                <p>Mar 19,2020</p>
+                            </div>
+                            <div class="s-dtime">
+
+                                <p>4.44</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer-r">
+                        <div class="inner-r">
+                            <img src="/img/latest-punjabi/nayan.png" alt="">
+                            <div class="s-details">
+                                <p>Nayan</p>
+                                <p>Dec 10,2020</p>
+                            </div>
+                            <div class="s-dtime">
+
+                                <p>3.30</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer-r">
+                        <div class="inner-r">
+                            <img src="/img/latest-punjabi/titliaan-song.jpg" alt="">
+                            <div class="s-details">
+                                <p>Titliaan</p>
+                                <p>Dec 5,2020</p>
+                            </div>
+                            <div class="s-dtime">
+
+                                <p>3.45</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="outer-r">
+                        <div class="inner-r">
+                            <img src="/img/latest-punjabi/temporary-pyar.jpg" alt="">
+                            <div class="s-details">
+                                <p>Temporary Pyar</p>
+                                <p>Dec 1,2020</p>
+                            </div>
+                            <div class="s-dtime">
+
+                                <p>2.50</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="popular">
+                <h2>Popular Artist</h2>
+                <div id="outer_pop">
+                    <a href="/playlist.html">
+                        <div class="inner_pop">
+                            <img src="/img/artist/diljit.jpg" alt="">
+                            <div class="artist-name">Diljit Dosanjh</div>
+                        </div>
+                    </a>
+                    <a href="/playlist.html">
+                        <div class="inner_pop">
+                            <img src="/img/artist/Neha_Kakkar.jpg" alt="">
+                            <div class="artist-name">Neha Kakkar</div>
+                        </div>
+                    </a>
+                    <a href="/playlist.html">
+                        <div class="inner_pop">
+                            <img src="/img/artist/gurnam-bhullar.jpg" alt="">
+                            <div class="artist-name">Gurnam Bhullar</div>
+                        </div>
+                    </a>
+                    <a href="/playlist.html">
+                        <div class="inner_pop">
+                            <img src="/img/artist/Jass-Manak.jpg">
+                            <div class="artist-name">Jass Manak</div>
+                        </div>
+                    </a>
+                    <a href="/playlist.html">
+                        <div class="inner_pop">
+                            <img src="/img/artist/jassi-gill.jpg" alt="">
+                            <div class="artist-name">Jassi Gill</div>
+                        </div>
+                    </a>
+                    <a href="/playlist.html">
+                        <div class="inner_pop">
+                            <img src="/img/artist/karan-aujla.jpg" alt="">
+                            <div class="artist-name">Karan Aujla</div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </section>
+            <section id="genre-1">
+                <div id="design">
+                    <div id="g1_outer_1">
+                        <div id="g1_outer_2">
+                            <div id="g1_inner">
+                                <img src="/img/logo1.svg" alt="">
+                                <p>Stations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="gen1">
+                    <div class="g1" id="g1-1"><a href=""><img src="/img/genre/romance.jpg" alt=""></a></div>
+                    <div class="g1" id="g1-2"><a href=""><img src="/img/genre/Bhakti.jpg" alt=""></a></div>
+                    <div class="g1" id="g1-3"><a href=""><img src="/img/genre/Dance.jpg" alt=""></a></div>
+                    <div class="g1" id="g1-4"><a href=""><img src="/img/genre/festival.png" alt=""></a></div>
+                    <div class="g1" id="g1-5"><a href=""><img src="/img/genre/Party.png" alt=""></a></div>
+                    <div class="g1" id="g1-6"><a href=""><img src="/img/genre/Wedding.jpg" alt=""></a></div>
+                    <div class="g1" id="g1-7"><a href=""><img src="/img/genre/STARS.jpg" alt=""></a></div>
+                </div>
+            </section>
+            <section id="genre-2">
+                <div class="outer_g2">
+                    <div class="inner_g2">
+                        <p>Party</p>
+                    </div>
+                </div>
+                <div class="outer_g2">
+                    <div class="inner_g2">
+                        <p>Road</p>
+                    </div>
+                </div>
+                <div class="outer_g2">
+                    <div class="inner_g2">
+                        <p>Electronic</p>
+                    </div>
+                </div>
+            </section>
+            <section id="hindi-songs">
+                <h2>Hindi Songs</h2>
+                <div id="main-h-songs">
+                    <div class="o_hsong">
+                        <img src="/img/songs-hindi/Ae-Mere-Dil.jpg" alt="">
+                        <div class="song_n">Ae Mere Dil</div>
+                        <div class="song_w">Abhay Jodhpurkar</div>
+                    </div>
+                    <div class="o_hsong">
+                        <img src="/img/songs-hindi/bol-do-na-zara.jpg" alt="">
+                        <div class="song_n">Bol Do Na Zara</div>
+                        <div class="song_w">Armaan Malik</div>
+                    </div>
+                    <div class="o_hsong">
+                        <img src="/img/songs-hindi/hua-hai-aj-pehli-bar.jpg" alt="">
+                        <div class="song_n">Hua Hain Aaj Pehli Baar</div>
+                        <div class="song_w">Armaan Malik</div>
+                    </div>
+                    <div class="o_hsong">
+                        <img src="/img/songs-hindi/Raabta.jpg" alt="">
+                        <div class="song_n">Raabta</div>
+                        <div class="song_w">Arijit Singh</div>
+                    </div>
+                    <div class="o_hsong">
+                        <img src="/img/songs-hindi/shayad.jpg" alt="">
+                        <div class="song_n">Shayad</div>
+                        <div class="song_w">Arijit Singh</div>
+                    </div>
+                </div>
+            </section>
+            <section id="english-songs">
+                <h2>English Songs</h2>
+                <div id="main-e-songs">
+                    <div class="o_hsong">
+                        <img src="/img/songs-english/7 rings.jpg" alt="">
+                        <div class="song_n">7 Rings</div>
+                        <div class="song_w">Ariana Grande</div>
+                    </div>
+                    <div class="o_hsong">
+                        <img src="/img/songs-english/closer.jpg" alt="">
+                        <div class="song_n">Closer</div>
+                        <div class="song_w">Chainsmokers</div>
+                    </div>
+                    <div class="o_hsong">
+                        <img src="/img/songs-english/friends.jpg" alt="">
+                        <div class="song_n">Friend</div>
+                        <div class="song_w">Marshmello</div>
+                    </div>
+                    <div class="o_hsong">
+                        <img src="/img/songs-english/let me love u.jpg" alt="">
+                        <div class="song_n">Let Me Love U</div>
+                        <div class="song_w">Justin Bieber</div>
+                    </div>
+                    <div class="o_hsong">
+                        <img src="/img/songs-english/on my way.jpg" alt="">
+                        <div class="song_n">On My Way</div>
+                        <div class="song_w">Alan Walker</div>
+                    </div>
+
+
+                </div>
+            </section>
+            <section id="punjabi-songs">
+                <h2>Punjabi Songs</h2>
+                <div id="main-p-songs">
+                    <div class="o_hsong">
+                        <img src="/img/song-punjabi/clash.jpg" alt="">
+                        <div class="song_n">Clash</div>
+                        <div class="song_w">Diljit</div>
+                    </div>
+                    <div class="o_hsong">
+                        <img src="/img/song-punjabi/jimmy-choo.jpg" alt="">
+                        <div class="song_n">Jimmy Choo</div>
+                        <div class="song_w">Guri</div>
+                    </div>
+                    <div class="o_hsong">
+                        <img src="/img/song-punjabi/Pagal-Gurnam-Bhullar.jpg" alt="">
+                        <div class="song_n">Pagal</div>
+                        <div class="song_w">Gurnam Bhullar</div>
+                    </div>
+                    <div class="o_hsong">
+                        <img src="/img/song-punjabi/sheh.jpg" alt="">
+                        <div class="song_n">Sheh</div>
+                        <div class="song_w">Singa</div>
+                    </div>
+                    <div class="o_hsong">
+                        <img src="/img/song-punjabi/suit-punjabi.jpg" alt="">
+                        <div class="song_n">Suit</div>
+                        <div class="song_w">Jass Manak</div>
+                    </div>
+
+
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+</body>
+</html>
