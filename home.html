@@ -14,7 +14,10 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="icon" href="/img/logo1.svg" type="image/x-icon">
 </head>
+<!-- body  and use hide-scroll too hide the Scroll bar-->
+
 <body class="hide-scroll">
+    <!-- top navigation bar -->
     <nav>
         <div id="nav-left">
             <div id="logo_name">
@@ -25,11 +28,15 @@
             </div>
         </div>
         <div id="nav-right">
+            <!-- this is for search bar -->
             <div><input type="search" name="" id="" placeholder="Search Here...."></div>
+            <!-- this is for notification bell -->
             <div id="bell-icon"><img src="/img/bell_icon.svg" alt=""></div>
+            <!-- this is for profile picture -->
             <div id="profile-photo"><img src="/img/profile-photo.JPG" alt=""></div>
         </div>
     </nav>
+
     <section id="playercontrols">
         <div class="songname">
             <div class="song_artist">
@@ -73,9 +80,12 @@
 
         </div>
     </section>
+    <!-- this is the main-desgin center part of the page and it is divided into 3 sections, namely slider and playlist-queue and main-->
     <div id="main-desgin">
+        <!-- this is Main Slider For Top Songs or Best or Trending Songs -->
         <section id="slider">
             <figure>
+                <!-- these are the images in the slider -->
                 <img src="img/slider/shona-shona.jpg" alt>
                 <img src="/img/slider/kya-baat-hai.jpg" alt>
                 <img src="/img/slider/KoiViNahi.jpg" alt>
@@ -83,13 +93,15 @@
                 <img src="/img/slider/asimhimanshi.jpg" alt>
             </figure>
         </section>
+        <!-- This is Sidebar For Showing Playlist in Queue -->
+        <!-- Only For Big Screens Because For Small Phone Can Open Playlist From Player -->
         <aside id="playlist-queue">
             <div id="pq_outer" class="hide-scroll">
                 <div id="pq-head">
                     <div>Queue</div>
                     <div class="dropdown">
                         <button>Options<i class="fa fa-caret-down"></i></button>
-                        <div class="dropdown-content" >
+                        <div class="dropdown-content">
                             <div class="o-part"><a href="#">Favourites</a></div>
                             <div class="o-part"><a href="#">View All</a></div>
                         </div>
@@ -226,7 +238,9 @@
                 </div>
             </div>
         </aside>
+        <!-- This ia main part of Webiste or Main Content -->
         <div id="main">
+                        <!-- this is the latest release section -->
             <section id="latest-release">
                 <h2>Latest Release</h2>
                 <div id="lat-rel">
@@ -284,6 +298,7 @@
                     </div>
                 </div>
             </section>
+                        <!-- this is the popular artists section -->
             <section id="popular">
                 <h2>Popular Artist</h2>
                 <div id="outer_pop">
@@ -327,6 +342,7 @@
                 </div>
 
             </section>
+            <!-- This is Songs Select by music Themes (or called as Genre) of songs -->
             <section id="genre-1">
                 <div id="design">
                     <div id="g1_outer_1">
@@ -348,6 +364,7 @@
                     <div class="g1" id="g1-7"><a href=""><img src="/img/genre/STARS.jpg" alt=""></a></div>
                 </div>
             </section>
+            <!-- This Section Conatin Main Or Top trensing Themes Of Music -->
             <section id="genre-2">
                 <div class="outer_g2">
                     <div class="inner_g2">
@@ -365,6 +382,8 @@
                     </div>
                 </div>
             </section>
+            <!-- Now we give Song By Acc to language -->
+            <!-- Hindi Songs -->
             <section id="hindi-songs">
                 <h2>Hindi Songs</h2>
                 <div id="main-h-songs">
@@ -395,6 +414,7 @@
                     </div>
                 </div>
             </section>
+            <!-- English Songs -->
             <section id="english-songs">
                 <h2>English Songs</h2>
                 <div id="main-e-songs">
@@ -427,6 +447,7 @@
 
                 </div>
             </section>
+            <!-- Punjabi Songs -->
             <section id="punjabi-songs">
                 <h2>Punjabi Songs</h2>
                 <div id="main-p-songs">
@@ -463,4 +484,5 @@
     </div>
     <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
