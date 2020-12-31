@@ -1,5 +1,5 @@
 # music-hub
-This is My First Major Project After Laerning HTML and CSS. Hope U Like it.
+This is My First Project After learning HTML and CSS. I hope. You Like it.
 
 You can Check Out Live Version Of This Project<br>
 <h2>Main Page</h2>
