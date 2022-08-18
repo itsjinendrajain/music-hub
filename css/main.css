@@ -29,7 +29,7 @@ nav {
   justify-content: space-between;
   padding: 1.25rem;
   margin-bottom: 1.25rem;
-  background: url("/img/background_image/bg10.jpg") no-repeat center
+  background: url("img/background_image/bg10.jpg") no-repeat center
     center/cover;
 }
 
@@ -159,8 +159,8 @@ nav {
 
 /* Now Main Section Of Website contain data */
 body {
-  background: url("/img/background_image/bg12.jpg") center center/cover;
-  /* background: url("/img/background_image/back3.jpg") repeat center center/cover ; */
+  background: url("img/background_image/bg12.jpg") center center/cover;
+  /* background: url("img/background_image/back3.jpg") repeat center center/cover ; */
   background: black;
   margin-top: 4.69rem;
   margin-bottom: 3.5rem;
@@ -487,13 +487,13 @@ section#slider figure {
   cursor: pointer;
 }
 .outer_g2:nth-child(1) .inner_g2 {
-  background: url("/img/genre2/party.jpg") no-repeat center center/contain;
+  background: url("img/genre2/party.jpg") no-repeat center center/contain;
 }
 .outer_g2:nth-child(2) .inner_g2 {
-  background: url("/img/genre2/road.jpg") no-repeat center center/contain;
+  background: url("img/genre2/road.jpg") no-repeat center center/contain;
 }
 .outer_g2:nth-child(3) .inner_g2 {
-  background: url("/img/genre2/electronic1.jpg") no-repeat center center/contain;
+  background: url("img/genre2/electronic1.jpg") no-repeat center center/contain;
 }
 .inner_g2 {
   display: flex;
